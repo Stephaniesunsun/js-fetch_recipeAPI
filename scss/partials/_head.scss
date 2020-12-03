@@ -1,0 +1,48 @@
+.upper-head {
+  height: 4em;
+  margin: 0;
+  background-color: $black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .openSearch-btn {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    right: 2em;
+    color: $white;
+    background-color: $black;
+
+    .fa-search {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+.hamburger {
+  border: none;
+  position: absolute;
+  color: $white;
+  background-color: $black;
+  left: 2em;
+  .fa-bars {
+    height: 20px;
+    width: 20px;
+  }
+}
+.lower-head {
+  position: relative;
+  height: 4em;
+  background-color: $yellow;
+}
+
+.lower-head {
+  display: grid;
+}
+h2 {
+  margin: auto 0.5em;
+}
