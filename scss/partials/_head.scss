@@ -1,39 +1,55 @@
-.upper-head {
+.upper-head,
+.upper-head-recipe {
   height: 4em;
   margin: 0;
-  background-color: $black;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  .openSearch-btn {
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    cursor: pointer;
+  .hamburger {
     border: none;
-    right: 2em;
+    position: absolute;
     color: $white;
     background-color: $black;
-
-    .fa-search {
+    left: 2em;
+    .fa-bars {
       height: 20px;
       width: 20px;
     }
   }
 }
-.hamburger {
-  border: none;
-  position: absolute;
-  color: $white;
+.upper-head {
   background-color: $black;
-  left: 2em;
-  .fa-bars {
-    height: 20px;
-    width: 20px;
+}
+.upper-head-recipe {
+  background-color: $white;
+  h1 {
+    color: $black;
+  }
+  background-color: $white;
+  .openSearch-btn {
+    color: $black;
+  }
+  .hamburger {
+    color: $black;
+    background-color: $white;
   }
 }
+.openSearch-btn {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  right: 2em;
+  color: $white;
+  background-color: $black;
+}
+.fa-search {
+  height: 26px;
+  width: 26px;
+}
+
 .lower-head {
   position: relative;
   height: 4em;
@@ -43,6 +59,17 @@
 .lower-head {
   display: grid;
 }
-h2 {
+.lower-title {
   margin: auto 0.5em;
+}
+@media (min-width: 750px) {
+  .lower-head {
+    height: 10.5em;
+  }
+  .lower-title {
+    font-size: 3.5em;
+    font-family: $roboto;
+    text-align: center;
+    padding-bottom: 1em;
+  }
 }

@@ -2,6 +2,21 @@
   height: 0vh;
   transition: all 300ms ease-out;
   position: relative;
+
+  .crossbtn {
+    border: none;
+    position: absolute;
+    background-color: $gray;
+    right: 6.5vw;
+    top: 20px;
+    outline: none;
+    cursor: pointer;
+    img {
+      cursor: pointer;
+      height: 26px;
+      width: 26px;
+    }
+  }
   form {
     display: flex;
     padding-top: 3em;
@@ -22,7 +37,7 @@
       outline: none;
     }
     .fa-search {
-      margin-right: 0.5em;
+      margin-right: 0.2em;
       height: 20px;
       width: 20px;
     }
@@ -35,19 +50,5 @@
     display: block;
     position: absolute;
     top: 105%;
-  }
-}
-.cross-btn {
-  border: none;
-  position: absolute;
-  background-color: $gray;
-  right: 7vw;
-  top: 20px;
-  outline: none;
-  cursor: pointer;
-
-  .fa-times {
-    height: 25px;
-    width: 25px;
   }
 }
