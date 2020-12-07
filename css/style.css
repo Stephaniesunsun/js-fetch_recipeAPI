@@ -202,7 +202,7 @@ p {
     height: 30px;
     width: 30px; }
 
-input {
+.searchQuery {
   background-color: #f9f7f7;
   width: 90%;
   height: 10%;
@@ -246,12 +246,12 @@ input {
   justify-content: space-around;
   align-items: center; }
   .filter button,
-  .filter input {
+  .filter .search-content {
     border: none;
     outline: none; }
   .filter button {
     cursor: pointer; }
-  .filter input {
+  .filter .search-content {
     width: 75%;
     background-color: #f9f7f7;
     font-size: 1em; }

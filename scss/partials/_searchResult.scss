@@ -7,14 +7,14 @@
   justify-content: space-around;
   align-items: center;
   button,
-  input {
+  .search-content {
     border: none;
     outline: none;
   }
   button {
     cursor: pointer;
   }
-  input {
+  .search-content {
     width: 75%;
     background-color: $gray;
     font-size: 1em;
