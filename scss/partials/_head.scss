@@ -1,8 +1,11 @@
 .upper-head,
 .upper-head-recipe {
+  z-index: 600;
+  position: sticky;
+  top: 0;
   height: 4em;
   margin: 0;
-  position: relative;
+  //position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,25 +54,36 @@
 }
 
 .lower-head {
-  position: relative;
   height: 4em;
-  background-color: $yellow;
-}
-
-.lower-head {
+  background-color: #f7d852;
   display: grid;
+  z-index: 500;
 }
 .lower-title {
   margin: auto 0.5em;
 }
 @media (min-width: 750px) {
   .lower-head {
-    height: 10.5em;
+    height: 15em;
+    position: relative;
+    z-index: 100;
+  }
+  .lower-head::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-top: solid 1em $yellow;
+    border-left: solid 1em transparent;
+    border-right: solid 1em transparent;
+    border-bottom: solid 1em transparent;
+    transform: translateX(-50%);
   }
   .lower-title {
     font-size: 3.5em;
     font-family: $roboto;
     text-align: center;
-    padding-bottom: 1em;
+    margin-top: 1.2em;
+    letter-spacing: 0.06em;
   }
 }

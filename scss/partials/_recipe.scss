@@ -10,6 +10,10 @@
   font-weight: 600;
   letter-spacing: 0.15em;
 }
+.fa-chevron-left {
+  cursor: pointer;
+  outline: none;
+}
 .likes {
   text-align: center;
   font-size: 0.8em;
@@ -38,7 +42,6 @@ p {
 @media (min-width: 800px) {
   .recipeIntro {
     width: 100vw;
-
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -60,6 +63,7 @@ p {
     width: 100vw;
   }
   .recipeImg {
+    object-fit: cover;
     grid-row: 1/2;
     grid-column: 2/3;
     width: 50vw;

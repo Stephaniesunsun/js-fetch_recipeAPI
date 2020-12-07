@@ -33,11 +33,14 @@
 }
 .search_result {
   width: 90%;
-  margin: auto;
+  margin: 3em auto auto;
   margin-top: 3em;
+
   .recipe {
-    width: 380px;
+    max-width: 650px;
     height: auto;
+    margin: auto;
+    background-color: $gray;
     .recipe_info {
       display: flex;
       //justify-content: center;
